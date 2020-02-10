@@ -1,0 +1,68 @@
+s:Ge/World/Material  = "Vacuum"
+d:Ge/World/HLX       = 2.0 m
+d:Ge/World/HLY       = 2.0 m
+d:Ge/World/HLZ       = 2.0 m
+b:Ge/World/Invisible = "TRUE"
+
+
+s:Ge/PhaseVol/Parent     = "World"
+s:Ge/PhaseVol/Type       =  "TsBox"
+s:Ge/PhaseVol/Material   = "Air"
+d:Ge/PhaseVol/HLX        = .5 m
+d:Ge/PhaseVol/HLY        = .5 m
+d:Ge/PhaseVol/HLZ        = .05 cm
+d:Ge/PhaseVol/TransX     = 0. m
+d:Ge/PhaseVol/TransY     = 0. m
+d:Ge/PhaseVol/TransZ     = 0.42 m
+d:Ge/PhaseVol/RotX       = 0. deg
+d:Ge/PhaseVol/RotY       = 0. deg
+d:Ge/PhaseVol/RotZ       = 0. deg
+
+
+b:Ts/PauseBeforeQuit = "False"
+b:Ge/QuitIfOverlapDetected= "False"
+
+
+s:Ge/BeamPosition/Parent="World"
+s:Ge/BeamPosition/Type="Group"
+d:Ge/BeamPosition/TransX=0. m
+d:Ge/BeamPosition/TransY=0. m
+d:Ge/BeamPosition/TransZ= 0.42 m
+d:Ge/BeamPosition/RotX=180. deg
+d:Ge/BeamPosition/RotY=0. deg
+d:Ge/BeamPosition/RotZ=0. deg
+
+
+s:So/ProtonSource/Type = "emittance"
+s:So/ProtonSource/Component                = "BeamPosition"
+s:So/ProtonSource/BeamParticle             = "proton"
+s:So/ProtonSource/Distribution = "BiGaussian"
+d:So/ProtonSource/BeamEnergy               = 100.2250000 MeV
+u:So/ProtonSource/BeamEnergySpread         = 1.1448480
+d:So/ProtonSource/SigmaX = 3.514010718 mm
+u:So/ProtonSource/SigmaXprime = 0.005305200
+u:So/ProtonSource/CorrelationX = 0.179111756
+d:So/ProtonSource/SigmaY = 3.295457792 mm
+u:So/ProtonSource/SigmaYprime = 0.005175500
+u:So/ProtonSource/CorrelationY = 0.411107199
+
+
+i:So/ProtonSource/NumberOfHistoriesInRun = 167698
+i:Ts/ShowHistoryCountAtInterval = 1000
+
+
+s:Sc/PhaseSpAtPhaseVol_100MeV/Quantity                    = "PhaseSpace"
+b:Sc/PhaseSpAtPhaseVol_100MeV/OutputToConsole             = "True"
+s:Sc/PhaseSpAtPhaseVol_100MeV/Surface                     = "PhaseVol/ZMinusSurface"
+s:Sc/PhaseSpAtPhaseVol_100MeV/OutputType                  = "ASCII" # ASCII or Binary
+s:Sc/PhaseSpAtPhaseVol_100MeV/OutputFile                  = "PhaseSpASCII"
+i:Sc/PhaseSpAtPhaseVol_100MeV/OutputBufferSize            = 1000
+#s:Sc/PhaseSpAtPhaseVol_100MeV/OnlyIncludeParticlesGoing  = "In"
+b:Sc/PhaseSpAtPhaseVol_100MeV/IncludeRunID                = "True"
+b:Sc/PhaseSpAtPhaseVol_100MeV/IncludeEventID              = "True"
+b:Sc/PhaseSpAtPhaseVol_100MeV/IncludeTrackID              = "True"
+b:Sc/PhaseSpAtPhaseVol_100MeV/IncludeTime                 = "True"
+b:Sc/PhaseSpAtPhaseVol_100MeV/IncludeSeed                 = "True"
+s:Sc/PhaseSpAtPhaseVol_100MeV/IfOutputFileAlreadyExists   = "Overwrite" # Exit, Overwrite or Increment
+b:Sc/PhaseSpAtPhaseVol_100MeV/OutputAfterRun              = "True"
+sv:Ph/Default/Modules   = 6 "g4em-standard_opt4" "g4h-phy_QGSP_BIC_HP" "g4decay" "g4ion-binarycascade" "g4h-elastic_HP" "g4stopping"
