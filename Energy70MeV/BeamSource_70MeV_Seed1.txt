@@ -38,7 +38,7 @@ s:So/ProtonSource/Component                = "BeamPosition"
 s:So/ProtonSource/BeamParticle             = "proton"
 s:So/ProtonSource/Distribution = "BiGaussian"
 d:So/ProtonSource/BeamEnergy               = 70.6026000 MeV
-u:So/ProtonSource/BeamEnergySpread         = 1.2617160
+u:So/ProtonSource/BeamEnergySpread         = 1.2388205
 d:So/ProtonSource/SigmaX = 3.949146676 mm
 u:So/ProtonSource/SigmaXprime = 0.007037500
 u:So/ProtonSource/CorrelationX = 0.337306237
@@ -47,8 +47,8 @@ u:So/ProtonSource/SigmaYprime = 0.006885000
 u:So/ProtonSource/CorrelationY = 0.522756081
 
 
-i:So/ProtonSource/NumberOfHistoriesInRun = 128272
-i:Ts/ShowHistoryCountAtInterval = 1000
+i:So/ProtonSource/NumberOfHistoriesInRun = 2188629
+i:Ts/ShowHistoryCountAtInterval = 10000
 
 
 s:Sc/PhaseSpAtPhaseVol_70MeV/Quantity                    = "PhaseSpace"
