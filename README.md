@@ -6,4 +6,4 @@ The snout is located at z= +42 cm upstream from the isocenter. Each of the folde
 "Beam_Lookup_Table.xlsx" provides a look up table with all the beam parameters (e.g. spot size, angular spread, correlation coefficient, mean energy, standard deviation of energy)  of the commissioned energies. This can be used to produce beam parameter of in-between energies (e.g. 75.5 MeV energy beam) and specify as energy distribution and emmittance parameters for beam shaping.
 
 
-The details and development of the model is described in: Rahman M., Bruza P., Lin Y., Gladstone D.J., Pogue B.W., Zhang R. Producing an Accurate Beam Model of the Varian ProBeam System using TOPAS Monte Carlo Toolkit. Under Review at MEDICAL PHYSICS. 
+The details and development of the model is described in: Rahman M, Bruza P, Lin Y, Gladstone DJ, Pogue BW, Zhang R. Producing a Beam Model of the Varian ProBeam Proton Therapy System using TOPAS Monte Carlo Toolkit. Medical Physics. Published online October 8, 2020. doi:10.1002/mp.14532
